@@ -16,7 +16,7 @@ var fs = require('fs');
 // be the third item in the array.
 var pathToFile = process.argv[2];
 
-// Read the file using the native "fs" module.
+// Read the file using the core "fs" module.
 var file = fs.readFileSync(pathToFile);
 
 // Convert the buffer object to a string and split it into an array, with "\n"
