@@ -6,7 +6,7 @@ http.get(url, function callback(response) {
 	response.on("data", function (data) {
 		console.log(data);
 	}).setEncoding('utf8');
-	response.on("error", function (data) {
+	response.on("error", function (error) {
 		console.log(error);
 	})
 	response.on("end", function (data) {
